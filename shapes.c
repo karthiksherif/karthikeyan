@@ -1,0 +1,48 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+void main()
+{
+    int p[10],p[20],color,gd=DETECT,gm=0;
+    initgraph(&gd,&gm," ");
+    color=2;
+    setcolor(GREEN);
+    rectangle(20,20,180,100);
+    color++;
+    setcolor(YELLOW);
+    fillellipse(300,6030,50);
+    color++;
+    setcolor(BLUE);
+    circle(450,60,50);  
+    arc(345,176,224,56,45);
+    line(123,132,589,452);
+    color++;
+    setcolor(YELLOW);
+    p[0]=60;
+    p[1]=200;
+    p[2]=100;
+    p[3]=300;
+    p[4]=20;
+    p[5]=300;
+    p[6]=p[0];
+    p[7]=p[1];
+    drawpoly(4,p);
+    setcolor(YELLOW);
+    p1[0]=260;
+    p1[1]=200;
+    p1[2]=340;
+    p1[3]=200;
+    p1[4]=370;
+    p1[5]=250;
+    p1[6]=340;
+    p1[7]=300;
+    p1[8]=260;
+    p1[9]=300;
+    p1[10]=230;
+    p1[11]=250;
+    p1[12]=p1[0];
+    p1[13]=p1[1];
+    drawpoly(7,p1);
+    getch();
+    closegraph();
+}
